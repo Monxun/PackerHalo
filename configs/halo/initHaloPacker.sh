@@ -12,4 +12,4 @@ sudo python3 -m pip install --upgrade pip
 sudo python3 -m pip install --user ansible
 
 # DOWNLOAD CIS ANSIBLE ROLE
-sudo ansible-galaxy install RedHatOfficial.rhel8_cis
+ansible-galaxy install RedHatOfficial.rhel8_cis
