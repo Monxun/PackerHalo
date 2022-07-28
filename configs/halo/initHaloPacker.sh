@@ -7,9 +7,9 @@ sudo yum update
 sudo subscription-manager repos --enable rhel-*-optional-rpms \
                            --enable rhel-*-extras-rpms \
                            --enable rhel-ha-for-rhel-*-server-rpms
-sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum update
-sudo yum install ansible
+sudo yum -y install ansible
 ansible --version
 
 # DOWNLOAD CIS ANSIBLE ROLE
