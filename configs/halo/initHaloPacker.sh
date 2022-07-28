@@ -2,7 +2,10 @@
 
 # UPDATE
 sudo yum update
-sudo yum install 
+
+# INSTALL PYTHON3
+sudo yum search python3
+sudo yum install python3 -y
 
 # INSTALL ANSIBLE
 python3 -m pip install --user ansible
