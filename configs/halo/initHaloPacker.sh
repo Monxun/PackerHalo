@@ -8,6 +8,7 @@ sudo yum search python3
 sudo yum -y install python3
 
 # INSTALL ANSIBLE
+sudo yum -y install dnf
 sudo dnf makecache
 sudo dnf -y install epel-release
 sudo dnf makecache
