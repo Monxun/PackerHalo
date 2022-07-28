@@ -6,10 +6,10 @@ sudo yum update
 # INSTALL PYTHON3
 sudo yum search python3
 sudo yum install python3 -y
-python3 -m pip install --upgrade pip
+sudo python3 -m pip install --upgrade pip
 
 # INSTALL ANSIBLE
-python3 -m pip install --user ansible
+sudo python3 -m pip install --user ansible
 
 # DOWNLOAD CIS ANSIBLE ROLE
-ansible-galaxy install RedHatOfficial.rhel8_cis
+sudo ansible-galaxy install RedHatOfficial.rhel8_cis
