@@ -5,6 +5,6 @@
     "aws_source_ami": "ami-08f3d892de259504d",
     "aws_instance_type": "t2.micro",
     "aws_ssh_username": "ec2-user",
-    "aws_description": "rhel7.9_image",
+    "description": "rhel7.9_image",
     "aws_version": "0.1"
 }

@@ -8,7 +8,6 @@
             "region": "{{user `aws_region`}}",
 
             "ami_name": "{{user `description`}}-{{user `aws_version`}}",
-            "description": "{{user `aws_description`}}",
             "source_ami": "{{user `aws_source_ami`}}",
             "instance_type": "{{user `aws_instance_type`}}",
             "ssh_username": "{{user `aws_ssh_username`}}"
