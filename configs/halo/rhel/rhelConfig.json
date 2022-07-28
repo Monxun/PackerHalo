@@ -26,7 +26,7 @@
 
         {
             "type": "ansible",
-            "playbook_file": "./ansible/runnerPlaybook.yaml"
+            "playbook_file": "/ansible/runnerPlaybook.yaml"
         }
     ],
 
