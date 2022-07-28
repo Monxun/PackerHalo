@@ -8,11 +8,9 @@ sudo yum search python3
 sudo yum -y install python3
 
 # INSTALL ANSIBLE
-sudo yum -y install dnf
-sudo dnf makecache
-sudo dnf -y install epel-release
-sudo dnf makecache
-sudo dnf -y install ansible
+sudo rpm -i epel-release-latest-7.noarch.rpm
+sudo yum update
+sudo yum install ansible
 ansible --version
 
 # DOWNLOAD CIS ANSIBLE ROLE
