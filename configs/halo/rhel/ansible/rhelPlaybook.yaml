@@ -1,6 +1,6 @@
 ---
 # RHEL GOLDEN IMAGE PLAYBOOK
-- hosts: localhost
+- hosts: all
   become: true
 
 # ////////////////////////////////////////////////////////////////////////////////////////
@@ -23,6 +23,10 @@
   tasks:
 
   # GRAB ACCOUNTS //////////////////////////////////////////////////////////////////////
+    - name: Include CIS Role
+      include_role:
+        name: RedHatOfficial.rhel8_cis
+
     - name: Run Script for Image Configuration
       shell:
       args:
