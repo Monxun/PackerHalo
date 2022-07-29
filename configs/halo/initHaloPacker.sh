@@ -22,4 +22,5 @@ sudo yum -y install ansible
 ansible --version
 
 # DOWNLOAD CIS ANSIBLE ROLE
+ansible-galaxy install mindpointgroup.rhel7_cis
 ansible-galaxy install RedHatOfficial.rhel8_cis
