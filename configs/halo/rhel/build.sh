@@ -29,4 +29,6 @@ packer build -only=amazon-ebs -var-file=rhelVars.json \
 -var "aws_region=us-gov-west-1" -var "aws_version=0.1" \
 rhelConfig.json
 
+aws ec2 describe-images
+
 # packer build -only=azure-rm,docker config.json
