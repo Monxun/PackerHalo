@@ -3,16 +3,8 @@
 # UPDATE
 sudo yum update
 
-# INSTALL AWS CLI
-sudo yum -y install unzip
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-
-
-
-
 # INSTALL ANSIBLE
+pip install jinja2
 sudo subscription-manager repos --enable rhel-*-optional-rpms \
                            --enable rhel-*-extras-rpms \
                            --enable rhel-ha-for-rhel-*-server-rpms
@@ -24,3 +16,9 @@ ansible --version
 # DOWNLOAD CIS ANSIBLE ROLE
 ansible-galaxy install mindpointgroup.rhel7_cis
 ansible-galaxy install RedHatOfficial.rhel8_cis
+
+# INSTALL AWS CLI
+sudo yum -y install unzip
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
