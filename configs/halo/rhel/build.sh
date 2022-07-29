@@ -23,11 +23,12 @@ else
 fi
 
 
-# EXECUTE PACKER BUILD
+# EXECUTE PACKER BUILDile=rhelVars.json
 packer init rhel.pkr.hcl
-packer build -only=amazon-ebs -var-file=rhelVars.json \
+packer build -only=amazon-ebs -var-file=rhelVars.json rhelConfig.json
+# packer build -only=amazon-ebs -var-file=rhelVars.json \
 # -var "aws_region=us-gov-west-1" -var "aws_version=0.1" \
-rhelConfig.json
+# rhelConfig.json
 
 aws ec2 describe-images --region us-gov-west-1
 
