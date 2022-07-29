@@ -9,6 +9,12 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
+# CONFIGURE STS FOR GOV CLOUD
+sts_client = boto3.client('sts', region_name='us-gov-east-1', endpoint_url='https://sts.us-gov-east-1.amazonaws.com')
+aws sts assume-role --role-arn arn:aws:iam::AccountID:role/RoleName --role-session-name RoleName --region us-gov-east-1 --endpoint-url https://sts.us-gov-east-1.amazonaws.com
+
+
+
 
 # INSTALL ANSIBLE
 sudo subscription-manager repos --enable rhel-*-optional-rpms \
