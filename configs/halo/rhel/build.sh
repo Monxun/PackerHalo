@@ -3,7 +3,7 @@
 # SET CREDENTIAL ENV VARIABLES FROM INPUT IF NOT PRESENT KEY
 
 # ACCESS KEY
-if [ -n $AWS_ACCESS_KEY ]
+if [ $AWS_ACCESS_KEY ]
 then
   continue
 else
@@ -13,7 +13,7 @@ else
 fi
 
 # SECRET KEY
-if [ -n $AWS_SECRET_KEY ]
+if [ $AWS_SECRET_KEY ]
 then
   continue
 else
