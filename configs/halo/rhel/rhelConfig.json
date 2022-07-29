@@ -19,8 +19,7 @@
             "type": "shell",
             "inline": [
                 "sleep 30",
-                "sudo apt update",
-                "sudo apt upgrade -y"
+                "sudo yum update"
             ]
         },
 
