@@ -4,6 +4,7 @@
 
 # ACCESS KEY
 if [ -n $AWS_ACCESS_KEY ]
+then
   continue
 else
     echo "Enter aws access key:"
@@ -13,6 +14,7 @@ fi
 
 # SECRET KEY
 if [ -n $AWS_SECRET_KEY ]
+then
   continue
 else
     echo "Enter aws secret key:"
