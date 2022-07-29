@@ -1,14 +1,24 @@
 #!/bin/bash
 
-# SET CREDENTIAL ENV VARIABLES FROM INPUT
-echo "Enter aws access key:"
-read aws_key
+# SET CREDENTIAL ENV VARIABLES FROM INPUT IF NOT PRESENT KEY
 
-echo "Enter aws secret key:"
-read aws_secret
+# ACCESS KEY
+if [ -n $AWS_ACCESS_KEY ]
+  continue
+else
+    echo "Enter aws access key:"
+    read aws_key
+    export AWS_ACCESS_KEY="$aws_key"
+fi
 
-export AWS_ACCESS_KEY="$aws_key"
-export AWS_SECRET_KEY="$aws_secret"
+# SECRET KEY
+if [ -n $AWS_SECRET_KEY ]
+  continue
+else
+    echo "Enter aws secret key:"
+    read aws_secret
+    export AWS_SECRET_KEY="$aws_secret"
+fi
 
 
 # EXECUTE PACKER BUILD
