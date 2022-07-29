@@ -1,7 +1,7 @@
 {
     "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
-    "aws_region": "us-gov-east-1",
+    "aws_region": "us-gov-west-1",
     "aws_source_ami": "ami-08f3d892de259504d",
     "aws_instance_type": "t2.micro",
     "aws_ssh_username": "ec2-user",
