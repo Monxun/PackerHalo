@@ -19,7 +19,7 @@
             "type": "shell",
             "inline": [
                 "sleep 30",
-                "sudo yum update"
+                "sudo yum -y update"
             ]
         },
 
