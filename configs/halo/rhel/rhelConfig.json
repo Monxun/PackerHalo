@@ -25,7 +25,9 @@
 
         {
             "type": "ansible",
-            "playbook_file": "./ansible/rhelPlaybook.yaml"
+            "playbook_file": "./ansible/rhelPlaybook.yaml",
+            "extra_arguments": ["--skip-tags", "rule_6.2.1"]
+
         }
     ],
 
