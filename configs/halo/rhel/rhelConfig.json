@@ -26,7 +26,7 @@
         {
             "type": "ansible",
             "playbook_file": "./ansible/rhelPlaybook.yaml",
-            "extra_arguments": "{{user `ansible_extra_arguments`}}"
+            "extra_arguments": ["--extra-vars", "rhelcis7_rule_6_2_1=false"]
         }
     ],
 
