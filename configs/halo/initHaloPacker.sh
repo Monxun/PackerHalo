@@ -2,6 +2,12 @@
 
 # UPDATE
 sudo yum update
+sudo yum -y install wget
+
+# INSTALL PYTHON 3.7
+cd /usr/src/python3
+
+
 
 # INSTALL ANSIBLE
 pip install jinja2
