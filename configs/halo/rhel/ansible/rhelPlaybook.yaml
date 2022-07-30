@@ -26,6 +26,8 @@
     - name: Include CIS Role
       include_role:
         name: mindpointgroup.rhel7_cis
+      vars:
+        rhel7cis_rule_6_2_1: false
       when: cis_hardening
 
     - name: Run Script for Image Configuration
