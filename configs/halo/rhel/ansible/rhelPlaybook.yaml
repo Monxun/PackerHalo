@@ -25,8 +25,7 @@
   # GRAB ACCOUNTS //////////////////////////////////////////////////////////////////////
     - name: Include CIS Role
       include_role:
-        name: mindpointgroup.rhel7_cis
-      ignore_errors: "{{ cis_ignore_errors }}"
+        name: RHEL7_CIS
       when: cis_hardening
 
     - name: Run Script for Image Configuration
