@@ -9,8 +9,6 @@
   vars_files:
   - "./rhelPlaybookVars.yaml"
 
-  # vars:
-
 # ////////////////////////////////////////////////////////////////////////////////////////
 #  ENVIRONMENT VARIABLES
 # ////////////////////////////////////////////////////////////////////////////////////////
@@ -30,13 +28,14 @@
       tags:
           - cis_hardening
 
-    - name: Run Script for Configuration JSON
+    - name: Run Script for Image Configuration
       shell:
       args:
         executable: /usr/bin/bash
         cmd: bash rhelScript.sh
         chdir: ./
       register: configuration_logs
+      when: configuration_script
       tags:
           - configuration_script
 
