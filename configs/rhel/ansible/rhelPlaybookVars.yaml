@@ -1,4 +1,4 @@
 ---
 init_instance: false
-cis_hardening: true
+cis_hardening: false
 configuration_script: true
