@@ -39,7 +39,4 @@
       # register: accounts_inventory
       # when: (key1 == "value1") and (key2 == "value2")
 
-        ansible.builtin.shell: cat < /tmp/*txt
-  args:
-    executable: /bin/bash
 
