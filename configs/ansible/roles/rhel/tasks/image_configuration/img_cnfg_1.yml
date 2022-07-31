@@ -1,6 +1,6 @@
 ---
 - name: SECTION img_cnfg_1.1 | MODIFY XVDA DISK
-  command: bash xvda.sh
+  script: xvda.sh
   tags:
       - img_cnfg_1.1
 
