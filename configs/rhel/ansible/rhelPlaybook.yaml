@@ -36,7 +36,7 @@
           - cis_hardening
 
     - name: Run Script for Image Configuration
-      shell: bash /rhelScript.sh
+      shell: rhelScript.sh
       register: configuration_logs
       when: configuration_script
       tags:
