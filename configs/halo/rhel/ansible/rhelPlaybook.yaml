@@ -34,7 +34,7 @@
       shell:
       args:
         executable: /usr/bin/bash
-        cmd: bash rhelScript.sh
+        cmd: bash ./rhelScript.sh
       tags:
           - configuration_script
       # register: accounts_inventory
