@@ -16,6 +16,7 @@ mv -v /boot/initramfs-$(uname -r).img{,.bak}
 dracut
 grubby --update-kernel=$(grubby --default-kernel) --args=fips=1
 uuid=$(findmnt --output=UUID -n -T /boot)
+echo $uuid
 [[ -n $uuid ]] && grubby --update-kernel=$(grubby --default-kernel) --args=boot=UUID=${uuid}
 EOF
 
