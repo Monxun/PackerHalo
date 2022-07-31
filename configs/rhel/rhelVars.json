@@ -6,5 +6,7 @@
     "aws_instance_type": "t2.micro",
     "aws_ssh_username": "ec2-user",
     "description": "rhel7.9_image",
-    "aws_version": "0.2"
+    "aws_version": "0.2",
+
+    "excluded_playbook_tags": "rule_6.2.1,rule_6.2.11,rule_6.2.12,rule_6.2.13,rule_6.2.14,rule_6.2.15,rule_6.2.16,rule_6.2.17"
 }
