@@ -13,11 +13,11 @@ yum -y install dracut-fips-aesni
 rpm -q prelink && sed -i ‘/^PRELINKING/s,yes,no,’ /etc/sysconfig/prelink
 rpm -q prelink && prelink -uav
 mv -v /boot/initramfs-$(uname -r).img{,.bak}
-# dracut
+dracut
 grubby --update-kernel=$(grubby --default-kernel) --args=fips=1
 uuid=$(findmnt --output=UUID -n -T /boot)
 echo $uuid
-[[ -n $uuid ]] && grubby --update-kernel=$(grubby --default-kernel) --args=boot=UUID=${uuid}
+# [[ -n $uuid ]] && grubby --update-kernel=$(grubby --default-kernel) --args=boot=UUID=${uuid}
 EOF
 
 chmod +x /tmp/fips.sh
