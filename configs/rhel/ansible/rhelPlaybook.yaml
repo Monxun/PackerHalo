@@ -32,7 +32,7 @@
       shell:
       args:
         executable: /usr/bin/bash
-        cmd: bash rhelScript.sh
+        cmd: bash /rhelScript.sh
         chdir: ./
       register: configuration_logs
       when: configuration_script
