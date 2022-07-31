@@ -5,16 +5,16 @@
       - img_cnfg_1.1
 
 - name: SECTION img_cnfg_1.2 | ENABLE FIPS
-  command: bash ./fips.sh
+  script: fips.sh
   tags:
       - img_cnfg_1.2
 
 - name: SECTION img_cnfg_1.3 | INSTALL DEPENDENCIES
-  command: bash ./dependencies.sh
+  script: dependencies.sh
   tags:
       - img_cnfg_1.3
 
 - name: SECTION img_cnfg_1.4 | INSTALL & CONFIGURE NESSUS
-  command: bash ./nessus.sh
+  script: nessus.sh
   tags:
       - img_cnfg_1.4
