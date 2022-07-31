@@ -1,5 +1,20 @@
 ---
 - name: SECTION img_cnfg_1.1 | MODIFY XVDA DISK
-  command: bash ./img_cnfg_1.1.sh
+  command: bash ./xvda.sh
   tags:
       - img_cnfg_1.1
+
+- name: SECTION img_cnfg_1.2 | ENABLE FIPS
+  command: bash ./fips.sh
+  tags:
+      - img_cnfg_1.2
+
+- name: SECTION img_cnfg_1.3 | INSTALL DEPENDENCIES
+  command: bash ./dependencies.sh
+  tags:
+      - img_cnfg_1.3
+
+- name: SECTION img_cnfg_1.4 | INSTALL & CONFIGURE NESSUS
+  command: bash ./nessus.sh
+  tags:
+      - img_cnfg_1.4

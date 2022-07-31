@@ -4,6 +4,7 @@ role_selector: rhel  # Options: rhel, windows, runner
 os_version: 7        # Options: 7, 8
 
 # SECTIONS
-cis_hardening: true
-stig_hardening: true
+init_instance: false
+cis_hardening: false
+stig_hardening: false
 image_configuration: true
