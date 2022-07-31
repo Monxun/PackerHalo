@@ -7,10 +7,11 @@ sudo su
 # ENABLE FIPS 
 cat > /tmp/fips.sh <<EOF
 #!/bin/bash
-yum install dracut-fips
+yum -y install dracut-fips
+yum -y install prelink
 grep -qw aes /proc/cpuinfo && echo YES || echo no
 #If the above returns YES, it would be beneficial (but not required) to install dracut-fips-aesni, e.g.:
-yum install dracut-fips-aesni
+yum -y install dracut-fips-aesni
 rpm -q prelink && sed -i ‘/^PRELINKING/s,yes,no,’ /etc/sysconfig/prelink
 rpm -q prelink && prelink -uav
 mv -v /boot/initramfs-$(uname -r).img{,.bak}

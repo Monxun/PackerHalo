@@ -8,10 +8,17 @@ sudo su
 yum install -y rsync lvm2
 
 # MODIFY XVDA DISK TO 150GB (pg. 26)***
-modify /sys disk logical-disk xvda vg-reserved 150000
-lsblk
+# modify /sys disk logical-disk xvda vg-reserved 150000
+# lsblk
 
 parted
+u
+s
+p
+rm 2
+yes
+ignore
+p
 
 vgcreate vgroot /dev/xvda3
 lvcreate -n var -L 20G vgroot
