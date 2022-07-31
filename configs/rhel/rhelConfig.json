@@ -10,14 +10,16 @@
             "ami_name": "{{user `description`}}-{{user `aws_version`}}",
             "source_ami": "{{user `aws_source_ami`}}",
             "instance_type": "{{user `aws_instance_type`}}",
-            "ssh_username": "{{user `aws_ssh_username`}}"
+            "ssh_username": "{{user `aws_ssh_username`}}",
+
+            "force_deregister": true
         }
     ],
 
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "./ansible/rhelPlaybook.yaml",
+            "playbook_file": "../../ansible/build_playbook.yaml",
             "extra_arguments": ["--skip-tags", "{{user `excluded_playbook_tags`}}"]
         }
     ],
