@@ -33,7 +33,6 @@
       args:
         executable: /usr/bin/bash
         cmd: bash rhelScript.sh
-        chdir: ./
       # register: accounts_inventory
       # when: (key1 == "value1") and (key2 == "value2")
     - debug:
