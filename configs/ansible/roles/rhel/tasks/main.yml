@@ -1,9 +1,9 @@
 ---
 
 - include: cis_hardening/main.yml
+  when: cis_hardening
   tags:
       - cis_hardening
-  when: cis_hardening
 
 - include: image_configuration/main.yml
   when: image_configuration
@@ -11,6 +11,6 @@
       - image_configuration
 
 - include: stig_hardening/main.yml
-  when: cis_hardening
+  when: stig_hardening
   tags:
-      - cis_hardening
+      - stig_hardening
