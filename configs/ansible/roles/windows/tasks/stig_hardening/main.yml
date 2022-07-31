@@ -1,0 +1,4 @@
+---
+
+- name: "SECTION | STIG HARDENING "
+  include: stig_1.yml

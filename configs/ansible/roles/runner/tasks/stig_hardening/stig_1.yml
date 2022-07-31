@@ -1,0 +1,17 @@
+---
+
+- name: Include STIG Role (RHEL7)
+  include_role:
+    name: mindpointgroup.rhel7_stig
+  when: stig_hardening and rhel_version == 7
+  tags:
+      - stig_hardening
+      - rhel7
+
+- name: Include STIG Role (RHEL8)
+  include_role:
+    name: redhatofficial.rhel8_stig
+  when: stig_hardening and rhel_version == 8
+  tags:
+      - stig_hardening
+      - rhel8

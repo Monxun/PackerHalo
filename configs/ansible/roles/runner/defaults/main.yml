@@ -1,0 +1,8 @@
+---
+# OS
+rhel_version: 7
+
+# SECTIONS
+cis_hardening: true
+stig_hardening: true
+image_configuration: true

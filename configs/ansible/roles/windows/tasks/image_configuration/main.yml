@@ -1,0 +1,4 @@
+---
+
+- name: "SECTION | IMAGE CONFIGURATION "
+  include: img_cnfg_1.yml

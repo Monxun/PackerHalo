@@ -31,7 +31,7 @@
           - cis_hardening
 
     - name: Run Script for Image Configuration
-      shell: rhelScript.sh
+      shell: bash ./rhelScript.sh
       args:
         executable: /usr/bin/bash
       tags:

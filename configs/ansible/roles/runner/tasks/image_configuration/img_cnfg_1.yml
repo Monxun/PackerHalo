@@ -1,0 +1,7 @@
+---
+- name: Run Script for Image Configuration
+  shell: rhelScript.sh
+  args:
+    executable: /usr/bin/bash
+  tags:
+      - configuration_script

@@ -1,0 +1,17 @@
+---
+
+- name: Include CIS Role (RHEL7)
+  include_role:
+    name: mindpointgroup.rhel7_cis
+  when: cis_hardening and rhel_version == 7
+  tags:
+      - cis_hardening
+      - rhel7
+
+- name: Include CIS Role (RHEL8)
+  include_role:
+    name: RedHatOfficial.rhel8_cis
+  when: cis_hardening and rhel_version == 8
+  tags:
+      - cis_hardening
+      - rhel8

@@ -1,0 +1,4 @@
+---
+
+- name: "SECTION | CIS HARDENING "
+  include: cis_1.yml
