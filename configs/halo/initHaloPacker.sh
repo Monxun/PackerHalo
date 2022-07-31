@@ -22,6 +22,8 @@ ansible --version
 # DOWNLOAD CIS ANSIBLE ROLE
 ansible-galaxy install mindpointgroup.rhel7_cis
 ansible-galaxy install RedHatOfficial.rhel8_cis
+ansible-galaxy install mindpointgroup.rhel7_stig
+ansible-galaxy install redhatofficial.rhel8_stig
 
 # INSTALL AWS CLI
 sudo yum -y install unzip
