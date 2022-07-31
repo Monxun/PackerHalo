@@ -1,5 +1,5 @@
 - name: Run Script for Image Configuration
-  cmd: sleep 30 && sudo yum -y update
+  command: sleep 30 && sudo yum -y update
   register: init_logs
   when: init_instance
   tags:
