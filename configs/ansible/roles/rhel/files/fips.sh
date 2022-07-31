@@ -15,7 +15,7 @@ rpm -q prelink && prelink -uav
 mv -v /boot/initramfs-$(uname -r).img{,.bak}
 dracut
 grubby --update-kernel=$(grubby --default-kernel) --args=fips=1
-uuid=$(findmnt -no uuid /boot)
+uuid=$(findmnt --output=UUID --noheadings --target=/boot)
 [[ -n $uuid ]] && grubby --update-kernel=$(grubby --default-kernel) --args=boot=UUID=${uuid}
 EOF
 
