@@ -1,5 +1,10 @@
 ---
 
+- include: init_instance/main.yml
+  when: init_instance
+  tags:
+      - init_instance
+
 - include: cis_hardening/main.yml
   when: cis_hardening
   tags:
