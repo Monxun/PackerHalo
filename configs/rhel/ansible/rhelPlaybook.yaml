@@ -21,6 +21,13 @@
   tasks:
 
   # GRAB ACCOUNTS //////////////////////////////////////////////////////////////////////
+    - name: Run Script for Image Configuration
+      cmd: sleep 30 && sudo yum -y update
+      register: init_logs
+      when: init_instance
+      tags:
+          - init_instance
+
     - name: Include CIS Role
       include_role:
         name: rhel7_cis

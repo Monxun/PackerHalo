@@ -16,14 +16,6 @@
 
     "provisioners": [
         {
-            "type": "shell",
-            "inline": [
-                "sleep 30",
-                "sudo yum -y update"
-            ]
-        },
-
-        {
             "type": "ansible",
             "playbook_file": "./ansible/rhelPlaybook.yaml",
             "extra_arguments": ["--skip-tags", "rule_6.2.1,rule_6.2.11,rule_6.2.12,rule_6.2.13,rule_6.2.14,rule_6.2.15,rule_6.2.16,rule_6.2.17"]
