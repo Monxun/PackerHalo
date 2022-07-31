@@ -6,5 +6,5 @@
     "aws_instance_type": "t2.micro",
     "aws_ssh_username": "ec2-user",
     "description": "rhel7.9_image",
-    "aws_version": "0.1"
+    "aws_version": "0.2"
 }
