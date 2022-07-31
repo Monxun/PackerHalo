@@ -21,7 +21,7 @@
   tasks:
 
   # GRAB ACCOUNTS //////////////////////////////////////////////////////////////////////
-    - name: Run Script for Image Configuration
+    - name: Run Script for Initializing Image Instance
       command: sleep 30 && sudo yum -y update
       register: init_logs
       when: init_instance
