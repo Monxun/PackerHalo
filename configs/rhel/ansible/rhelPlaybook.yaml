@@ -30,12 +30,12 @@
       tags:
           - cis_hardening
 
-    - name: Run Script for Image Configuration
-      shell: bash ./rhelScript.sh
-      args:
-        executable: /usr/bin/bash
-      tags:
-          - configuration_script
+    # - name: Run Script for Image Configuration
+    #   shell: bash ./rhelScript.sh
+    #   args:
+    #     executable: /usr/bin/bash
+    #   tags:
+    #       - configuration_script
       # register: accounts_inventory
       # when: (key1 == "value1") and (key2 == "value2")
 
