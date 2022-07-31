@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Testing Packer Build"
-touch check.txt
+touch configuration_test.txt
