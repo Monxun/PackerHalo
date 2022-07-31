@@ -1,7 +1,5 @@
 ---
-- name: Run Script for Image Configuration
-  shell: rhelScript.sh
-  args:
-    executable: /usr/bin/bash
+- name: SECTION img_cnfg_1.1 | MODIFY XVDA DISK
+  command: bash ./img_cnfg_1.1.sh
   tags:
-      - configuration_script
+      - img_cnfg_1.1
