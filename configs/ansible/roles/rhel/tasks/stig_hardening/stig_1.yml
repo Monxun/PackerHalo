@@ -2,7 +2,7 @@
 
 - name: Include STIG Role (RHEL7)
   include_role:
-    name: mindpointgroup.rhel7_stig
+    name: RedHatOfficial.rhel7_stig
   when: stig_hardening and rhel_version == 7
   tags:
       - stig_hardening
