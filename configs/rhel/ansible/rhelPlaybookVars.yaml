@@ -1,4 +1,0 @@
----
-init_instance: false
-cis_hardening: false
-configuration_script: true
