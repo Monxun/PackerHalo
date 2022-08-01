@@ -1,3 +1,4 @@
+---
 - name: Run Script for Init Instance
   command: sudo sleep 30 && sudo yum -y update
   register: init_logs
