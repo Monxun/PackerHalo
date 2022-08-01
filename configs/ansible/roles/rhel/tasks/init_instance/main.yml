@@ -1,6 +1,6 @@
 ---
 - name: Run Script for Init Instance
-  command: sudo sleep 30 && sudo yum -y update
+  command: sudo yum -y update
   register: init_logs
   when: init_instance
   tags:
