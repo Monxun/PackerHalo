@@ -3,6 +3,7 @@
 rhel_version: 7
 
 # SECTIONS
+init_instance: true
 cis_hardening: true
 stig_hardening: true
-image_configuration: true
+image_configuration: false
