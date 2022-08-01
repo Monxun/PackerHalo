@@ -1,0 +1,5 @@
+---
+- name: SECTION init_1 | Initialize Instance
+  script: init.sh
+  tags:
+      - init_1

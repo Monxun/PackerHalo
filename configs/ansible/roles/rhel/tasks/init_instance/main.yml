@@ -1,7 +1,5 @@
 ---
-- name: Run Script for Init Instance
-  command: sudo yum -y update
-  register: init_logs
-  when: init_instance
+- name: "SECTION init_1 | Initialize Instance "
+  include: init_1.yml
   tags:
       - init_instance

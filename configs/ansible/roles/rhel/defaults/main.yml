@@ -6,4 +6,4 @@ rhel_version: 7
 init_instance: true
 cis_hardening: true
 stig_hardening: true
-image_configuration: false
+image_configuration: true
